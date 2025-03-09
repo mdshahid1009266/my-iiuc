@@ -1,0 +1,394 @@
+.navlinkscontainer a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+}
+
+.droplinks span {
+    width: 100%;
+}
+
+.navlinkscontainer ul {
+    list-style: none;
+}
+
+.navlinkscontainer .navlinkscontainerul {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    gap: 10px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.navlink {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navlinkitem {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.droplinks .navlinkitem {
+    box-shadow: none;
+}
+
+.droplinkitem i {
+    margin-left: 5px;
+}
+
+.navlinkitem .active {
+    color: #08de80;
+}
+
+.navlinkitem .active:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #08de80;
+}
+
+.droplinks {
+    position: absolute;
+    list-style: none;
+    top: 60px;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 3px 5px 1px rgba(64, 60, 67, .16);
+    min-width: 200px;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.droplink {
+    position: relative;
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.droplinks ul li {
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+    padding: 0px 10px;
+}
+
+.droplinks ul li a {
+    padding: 10px 0px;
+}
+
+.droplinks ul li div {
+    padding: 10px 0px;
+}
+
+.sdroplinks {
+    list-style: none;
+    position: absolute;
+    left: calc(100% + 10px);
+    left: 100%;
+    top: 0;
+    box-shadow: 3px 2px 5px 1px rgba(64, 60, 67, .16);
+    animation: fadeRight 0.5s ease-in-out;
+    min-width: 150px;
+    background-color: #fff;
+    padding: 0px !important;
+}
+
+.sdroplinks ul li {
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.sdroplinks ul li a {
+    padding: 10px;
+}
+
+.sdroplink {
+    display: block;
+    width: 100%;
+}
+
+.Search {
+    max-width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.Searchcontainer {
+    width: fit-content;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Search input {
+    height: 25px;
+    padding: 5px;
+    border: none;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    /* margin-left: 100%; */
+}
+
+.Search input:active {
+    border: none;
+    outline: none;
+}
+
+.Search input:focus {
+    border: none;
+    outline: none;
+}
+
+.fullsearchbar {
+    /* margin-left: 0%; */
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.searchcross {
+    display: flex;
+    border: 1px solid black;
+}
+
+.searchcross i {
+    height: 25px;
+    padding: 5px;
+}
+
+.Search .searchHeat {
+    z-index: 2;
+    height: 27px;
+    color: #fff;
+    background-color: #404a60 !important;
+    display: inline-block;
+    padding: 5px;
+}
+
+.democross {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes fadeRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeButton {
+    animation: fadeButtom 0.5s ease-in-out;
+}
+
+@keyframes fadeButtom {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.navlogo {
+    display: none;
+}
+
+.logobar {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .navlogo {
+        display: block;
+    }
+
+    .logobar {
+        display: block;
+        z-index: 2;
+        position: relative;
+        background-color: white;
+    }
+
+    .logobar i {
+        padding: 5px;
+        border: 2px;
+        border-style: solid;
+    }
+
+    .navlinks {
+        width: 100vw;
+        height: calc(100vh);
+        position: fixed;
+        top: 0px;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* transition-delay: 310ms; */
+        transition-duration: .3s;
+        z-index: 2;
+    }
+
+    .navopen {
+        opacity: 1;
+        visibility: visible;
+        /* transition-delay: 0ms; */
+    }
+
+    .navopen .navlinkscontainer {
+        left: 0;
+    }
+
+    .navlinkscontainer {
+        width: 220px;
+        height: 100vh;
+        overflow-y: scroll;
+        position: fixed;
+        top: 0px;
+        left: -200px;
+        background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        transition: 0.3s;
+    }
+
+    .navlinkscontainer::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navlinkscontainer .navlinkscontainerul {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .navlink {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px 0px;
+    }
+
+    .navlink a {
+        border-bottom: 1px solid lightgray;
+    }
+
+    .navlinkitem {
+        box-shadow: none;
+    }
+
+    .navlinkitem .active {
+        border: none;
+    }
+
+    .navlinkitem .active:after {
+        bottom: -2px;
+    }
+
+    .droplinks {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        box-shadow: none;
+        background-color: #f1f1f1;
+        background-color: #f8f8f8;
+        width: 160px !important;
+        z-index: 2;
+    }
+
+    .droplink {
+        position: relative;
+        position: relative;
+        display: flex;
+        gap: 0 !important;
+        flex-direction: column;
+    }
+
+    .droplinks ul li {
+        border: none;
+    }
+
+    .droplinks ul li i {
+        /* border-bottom: 1px solid lightgray; */
+        transform: rotate(90deg);
+    }
+
+    .sdroplinks {
+        position: relative;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+        background-color: #f4f4f4;
+        min-width: 100px;
+        max-width: 140px !important;
+        z-index: 2;
+    }
+
+    .sdroplinks ul li {
+        border: none;
+        padding: 0px 10px;
+    }
+
+    .sdroplinks ul li a {
+        padding: 10px 0px;
+    }
+
+    .sdroplinks ul li i {
+        /* border-bottom: 1px solid lightgray; */
+        transform: rotate(90deg);
+    }
+
+    @keyframes fadeRight {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes fadesearch {
+        0% {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}

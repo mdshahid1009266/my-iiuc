@@ -1,0 +1,10 @@
+.historyContainer{
+    padding: 10px;
+    background-color: #faebd74f;
+}
+.historyContainer h1{
+    text-align: center;
+}
+.historyContainer p{
+    text-align: justify;
+}

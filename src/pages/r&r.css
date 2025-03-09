@@ -1,0 +1,28 @@
+#r_and_r{
+    display: block;
+}
+.r_and_rHeader{
+    text-align: center;
+    border-bottom: 2px solid;
+    padding: 5px;
+}
+.r_and_ritem{
+    margin: 5px 0px;
+}
+.r_and_ritem h1{
+    margin: 5px 0px;
+    display: inline-block;
+    border-bottom: 2px solid hsl(329deg 100% 36%);
+}
+.r_and_ritem p,
+.r_and_ritem ul{
+    margin-left: 15px;
+}
+#r_and_r ul{
+    list-style: none;
+}
+#r_and_r ul li{
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}

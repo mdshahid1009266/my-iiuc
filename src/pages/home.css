@@ -1,0 +1,25 @@
+.combine {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: stretch;
+}
+
+.combine .mainEvents,
+.combine .mainWelcome {
+    flex-basis: 65%;
+    background-color: #f1f1f1;
+}
+
+.combine .mainNotice,
+.combine .mainMesseges {
+    flex-basis: 35%;
+    background-color: #f1f1f1;
+}
+
+@media only screen and (max-width: 1000px) {
+    .combine {
+        flex-direction: column;
+        justify-content: center;
+    }
+}

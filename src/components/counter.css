@@ -1,0 +1,53 @@
+#counter{
+    width: 100%;
+    padding: 10px;
+    background-color: slategray;
+    margin: 15px 0px;
+}
+.counterContainer{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.counterchild{
+    flex: 1 1 0px;
+    flex-grow: 1;
+    padding: 20px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+}
+.counterchild i{
+    font-size: 30px;
+}
+.counterBody{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+    .counterchild{
+        width: 45%;
+        flex: none;
+        margin: auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 400px) {
+    .counterchild{
+        width: 90%;
+        flex: none;
+        margin: auto;
+    }
+}

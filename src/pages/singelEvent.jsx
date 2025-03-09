@@ -1,0 +1,25 @@
+import { useParams } from "react-router-dom";
+import "./singelEvent.css";
+import axios from "axios";
+
+
+export default () => {
+    const { id } = useParams()
+    const notice = axios.get("https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf")
+    const event = {
+        _id: "hjhkhasbdfsafd",
+        eventImg: "https://us.123rf.com/450wm/junnemui/junnemui1807/junnemui180700227/106453636-people-use-smart-phones-record-video-at-music-concert.jpg?ver=6",
+        eventTitle: "Learning to Javascript",
+        eventDisc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam officia iusto qui quam temporibus? Molestiae, explicabo! In veniam ipsam, praesentium eius iusto eligendi provident consequuntur nesciunt consequatur molestias. Nihil quibusdam mollitia molestiae enim possimus nesciunt nisi porro cumque nobis voluptatum blanditiis ut voluptatem delectus deleniti quam exercitationem, ullam, saepe distinctio natus. Placeat cupiditate, ea odit numquam rerum perspiciatis saepe totam illo aliquid reprehenderit atque nesciunt ratione? Similique facilis quia, est architecto iste unde nulla! Rem reprehenderit tempora obcaecati. Recusandae quis voluptatem esse ipsa molestias quibusdam nisi ipsum cumque rerum voluptate autem quas iure numquam dignissimos minima ipsam suscipit nam veniam, mollitia enim dolor modi! Recusandae laborum dicta veritatis earum, deleniti ipsa, repellendus, quod dolores commodi voluptate quas sed ducimus obcaecati velit. Quas dolor, earum illum repellat ratione, debitis amet cum repudiandae officia reiciendis nostrum, beatae repellendus ad! Debitis voluptatibus sunt in doloremque fugit suscipit quis eveniet voluptas magnam. Voluptatibus quaerat illum id nemo temporibus fugiat distinctio animi. Aperiam cumque vero laborum eos exercitationem? Adipisci corporis quisquam neque aut nesciunt animi sunt id, at quasi voluLorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam officia iusto qui quam temporibus? Molestiae, explicabo! In veniam ipsam, praesentium eius iusto eligendi provident consequuntur nesciunt consequatur molestias. Nihil quibusdam mollitia molestiae enim possimus nesciunt nisi porro cumque nobis voluptatum blanditiis ut voluptatem delectus deleniti quam exercitationem, ullam, saepe distinctio natus. Placeat cupiditate, ea odit numquam rerum perspiciatis saepe totam illo aliquid reprehenderit atque nesciunt ratione? Similique facilis quia, est architecto iste unde nulla! Rem reprehenderit tempora obcaecati. Recusandae quis voluptatem esse ipsa molestias quibusdam nisi ipsum cumque rerum voluptate autem quas iure numquam dignissimos minima ipsam suscipit nam veniam, mollitia enim dolor modi! Recusandae laborum dicta veritatis earum, deleniti ipsa, repellendus, quod dolores commodi voluptate quas sed ducimus obcaecati velit. Quas dolor, earum illum repellat ratione, debitis amet cum repudiandae officia reiciendis nostrum, beatae repellendus ad! Debitis voluptatibus sunt in doloremque fugit suscipit quis eveniet voluptas magnam. Voluptatibus quaerat illum id nemo temporibus fugiat distinctio animi. Aperiam cumque vero laborum eos exercitationem? Adipisci corporis quisquam neque aut nesciunt animi sunt id, atLorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam officia iusto qui quam temporibus? Molestiae, explicabo! In veniam ipsam, praesentium eius iusto eligendi provident consequuntur nesciunt consequatur molestias. Nihil quibusdam mollitia molestiae enim possimus nesciunt nisi porro cumque nobis voluptatum blanditiis ut voluptatem delectus deleniti quam exercitationem, ullam, saepe distinctio natus. Placeat cupiditate, ea odit numquam rerum perspiciatis saepe totam illo aliquid reprehenderit atque nesciunt ratione? Similique facilis quia, est architecto iste unde nulla! Rem reprehenderit tempora obcaecati. Recusandae quis voluptatem esse ipsa molestias quibusdam nisi ipsum cumque rerum voluptate autem quas iure numquam dignissimos minima ipsam suscipit nam veniam, mollitia enim dolor modi! Recusandae laborum dicta veritatis earum, deleniti ipsa, repellendus, quod dolores commodi voluptate quas sed ducimus obcaecati velit. Quas dolor, earum illum repellat ratione, debitis amet cum repudiandae officia reiciendis nostrum, beatae repellendus ad! Debitis voluptatibus sunt in doloremque fugit suscipit quis eveniet voluptas magnam. Voluptatibus quaerat illum id nemo temporibus fugiat distinctio animi. Aperiam cumque vero laborum eos exercitationem? Adipisci corporis quisquam neque aut nesciunt animi sunt id, atptatum. Voluptatibus nostrum quidem tenetur sint ut, illum cum voluptatem, aliquid labore optio commodi? Aperiam, quidem aliquid rerum qui veniam quae minima ipsum pariatur sapiente error."
+    }
+    return (
+        <div id="singelevent">
+            <div className="singeleventContainer container">
+                <img src={event.eventImg} alt="" />
+                <h1>{event.eventTitle}</h1>
+                <p>{"27 November 2023"}</p>
+                <p>{event.eventDisc}</p>
+            </div>
+        </div>
+    )
+}

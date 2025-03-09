@@ -1,0 +1,21 @@
+.nothingContainer {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nothingContainer h1 {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.nothingContainer a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #FF0000;
+    padding: 10px 15px;
+    border-radius: 3px;
+}

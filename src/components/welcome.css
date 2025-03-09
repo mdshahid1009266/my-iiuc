@@ -1,0 +1,28 @@
+.wellcomeContainer h1{
+    margin: 5px 0px;
+}
+.wellcomeContainer div{
+    text-align: justify;
+}
+.wellcomeContainer div img{
+    float: right;
+    padding: 10px;
+    max-width: 400px;
+}
+.wellcomeContainer div button{
+    background: #083269;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+}
+@media (max-width: 700px) {
+    .wellcomeContainer h1 {
+        font-size: 22px;
+    }
+    .wellcomeContainer div img {
+        padding: 10px;
+        max-width: 100%;
+    }
+}

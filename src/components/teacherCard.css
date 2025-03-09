@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+#teacherCard {
+    box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+}
+
+#teacherCard .card {
+    width: 300px;
+    height: 300px;
+    background: white;
+    border-radius: 32px;
+    padding: 3px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    box-shadow: #604b4a30 0px 70px 30px -50px;
+}
+
+#teacherCard .card .mail {
+    position: absolute;
+    right: 2rem;
+    top: 1.4rem;
+    background: transparent;
+    border: none;
+}
+
+#teacherCard .card .mail svg {
+    stroke: #122071;
+    stroke-width: 3px;
+}
+
+#teacherCard .card .mail svg:hover {
+    stroke: #b8005f;
+}
+
+#teacherCard .card .profile-pic {
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    top: 3px;
+    left: 3px;
+    border-radius: 29px;
+    z-index: 1;
+    border: 0px solid #122071;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out 0.2s, z-index 0.5s ease-in-out 0.2s;
+}
+
+#teacherCard .card .profile-pic img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: 0px 0px;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+#teacherCard .card .bottom {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    right: 3px;
+    background: #122071;
+    top: 80%;
+    border-radius: 29px;
+    z-index: 1;
+    box-shadow: #604b4a30 0px 5px 5px 0px inset;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+#teacherCard .card .bottom .content {
+    position: absolute;
+    bottom: 0;
+    left: 1.5rem;
+    right: 1.5rem;
+    height: 170px;
+}
+
+#teacherCard .card .bottom .content .name {
+    display: block;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 900;
+}
+
+#teacherCard .card .bottom .content .about-me {
+    display: block;
+    font-size: 0.9rem;
+    color: white;
+    margin-top: 1rem;
+}
+
+#teacherCard .card .bottom .bottom-bottom {
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#teacherCard .card .bottom .bottom-bottom .social-links-container {
+    display: flex;
+    gap: 1rem;
+}
+
+#teacherCard .card .bottom .bottom-bottom .social-links-container a{
+    text-decoration: none;
+    color: white;
+    height: 20px;
+}
+#teacherCard .card .bottom .bottom-bottom .social-links-container a i {
+    fill: white;
+    filter: drop-shadow(0 5px 5px #a5848222);
+}
+
+#teacherCard .card .bottom .bottom-bottom .social-links-container svg:hover {
+    fill: #b8005f;
+    transform: scale(1.2);
+}
+
+#teacherCard .card .bottom .bottom-bottom .button {
+    background: white;
+    color: #122071;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.6rem;
+    padding: 0.4rem 0.6rem;
+    box-shadow: #a5848222 0px 5px 5px 0px;
+}
+
+#teacherCard .card .bottom .bottom-bottom .button:hover {
+    background: #b8005f;
+    color: white;
+}
+
+#teacherCard .card:hover {
+    border-top-left-radius: 55px;
+}
+
+#teacherCard .card:hover .bottom {
+    top: 20%;
+    border-radius: 80px 29px 29px 29px;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+}
+
+#teacherCard .card:hover .profile-pic {
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    z-index: 3;
+    border: 7px solid #122071;
+    box-shadow: #604b4a30 0px 5px 5px 0px;
+    transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
+}
+
+#teacherCard .card:hover .profile-pic:hover {
+    transform: scale(1.3);
+    border-radius: 0px;
+}
+
+#teacherCard .card:hover .profile-pic img {
+    /* transform: scale(2.5);
+    object-position: 0px 25px; */
+    transition: all 0.5s ease-in-out 0.5s;
+}
+
+#teacherCard .card:hover .profile-pic2 img {
+    transform: scale(2);
+    object-position: 0px 15px;
+}

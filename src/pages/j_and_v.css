@@ -1,0 +1,55 @@
+#jobs {
+    display: block;
+}
+
+#jobs h1 {
+    text-align: center;
+}
+
+#jobs .studentinfoContainer {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+}
+
+#jobs .studentinfoContainer .infoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(226, 226, 226, 0.32);
+    border: 1px solid rgb(204, 204, 204);
+    padding: 10px 5px;
+    margin: 5px 0px;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+}
+
+#jobs .studentinfoContainer .infoItem h3,
+#jobs .studentinfoContainer .infoItem p {
+    flex: 1;
+}
+.applybutton{
+    text-decoration: none;
+    color: #fff;
+    background-color: #FF0000;
+    padding: 4px 7px;
+    border-radius: 3px;
+    border: none;
+}
+@media only screen and (max-width: 700px) {
+    #jobs .studentinfoContainer {
+        flex-direction: column;
+    }
+
+    #jobs .studentinfoContainer .infoItem {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(226, 226, 226, 0.32);
+        border-top: 1px solid rgb(204, 204, 204);
+        padding: 10px 5px;
+        margin: 0px;
+        gap: 0px;
+        flex-direction: row;
+    }
+}

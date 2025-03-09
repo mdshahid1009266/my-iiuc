@@ -1,0 +1,9 @@
+.missionContainer{
+    background-color: aliceblue;
+    text-align: justify;
+    padding: 10px;
+}
+.missionContainer h1{
+    text-align: center;
+    margin: 10px 0px;
+}

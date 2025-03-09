@@ -1,0 +1,47 @@
+#syllabus embed{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+#syllabus {
+    text-align: center;
+}
+
+#syllabus iframe {
+    width: 100%;
+    height: 80vh;
+    margin: auto;
+    display: block;
+}
+
+.googledoc {
+    display: none !important;
+}
+
+#syllabus a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #FF0000;
+    margin: 10px;
+    padding: 4px 7px;
+    border-radius: 3px;
+    border: none;
+    display: none !important;
+}
+
+@media only screen and (max-width: 700px) {
+    #syllabus iframe {
+        display: none;
+    }
+
+    .googledoc {
+        display: block !important;
+    }
+
+    #syllabus a {
+        display: block !important;
+        width: 50%;
+        min-width: 150px;
+        margin: 10px auto;
+    }
+}

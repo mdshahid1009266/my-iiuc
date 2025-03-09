@@ -1,0 +1,12 @@
+.aboutContainer p{
+    text-align: justify;
+}
+.aboutContainer p img{
+    float: right;
+    max-width: 100%;
+    width: 400px;
+    padding: 10px;
+}
+.aboutContainer h1{
+    text-align: center;
+}

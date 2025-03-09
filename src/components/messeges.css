@@ -1,0 +1,92 @@
+#messeges {}
+
+#messeges .messegesContainer a {
+    text-decoration: none;
+    color: black;
+}
+
+.messegesContainer .message {
+    display: flex;
+    gap: 10px;
+    box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.messegesContainer h3 {
+    text-align: center;
+}
+
+.messegesContainer .message img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* singelmessege */
+.singelmessege {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+
+.singelmessege .singelmessegebody {
+    width: 75%;
+    text-align: center;
+    border-right: 2px solid lightgray;
+    padding: 5px;
+}
+
+.singelmessege .singelmessegebody img {
+    max-width: 100%;
+    width: 220px;
+    margin: 10px 0px;
+}
+.singelmessegep{
+    font-weight: bold;
+    margin-top: 0px !important;
+}
+.singelmessege .singelmessegebody p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.singelmessege .othermessege {
+    width: 25%;
+}
+
+.othermessege a {
+    text-decoration: none;
+    color: black;
+}
+
+.othermessege .message {
+    display: flex;
+    gap: 10px;
+    box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.othermessege .message img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 700px) {
+    .singelmessege{
+        flex-direction: column;
+    }
+    .singelmessege .singelmessegebody {
+        width: 100%;
+        text-align: center;
+        border-right: none;
+        padding: 5px;
+    }
+    .singelmessege .othermessege {
+        width: 100%;
+    }
+}

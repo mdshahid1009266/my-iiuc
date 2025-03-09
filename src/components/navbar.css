@@ -1,0 +1,38 @@
+#navbar {
+    box-shadow: 5px 5px 15px #D1D9E6, 0px 0px 0px #ffffff;
+    ;
+}
+
+.navbarContainer {
+    padding-bottom: 0px !important;
+}
+
+.navbarContainer .navbanner a {
+    text-decoration: none;
+}
+.navbarContainer .navbanner img {
+    width: 100%;
+    max-width: 100%;
+    height: 80px;
+}
+
+.navbarContainer .menubar .navlogo a {
+    text-decoration: none;
+}
+.navbarContainer .menubar .navlogo span {
+    color: #0d0357 !important;
+}
+
+.menubar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid black;
+    padding: 5px 0px;
+}
+
+@media (max-width: 700px) {
+    .navbarContainer .navbanner img {
+        height: auto;
+    }
+}
